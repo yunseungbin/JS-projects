@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Click to upload the image!</h2>
+        <input type="file" id="upload" accept="image/*" />
+        <div class="maincontainer">
+          <img id="preview" alt="미리보기" style="display: none" />
+        </div>
+      </header>
+      <p class="download"><button id="download">Download</button></p>
+
+      <main>
+        <p>
+          blur :
+          <br />
+          <input type="range" id="blur" value="0" class="filter" />
+        </p>
+        <p>
+          brightness :
+          <br />
+          <input type="range" id="brightness" class="filter" />
+        </p>
+        <p>
+          contrast :
+          <br />
+          <input type="range" id="contrast" class="filter" />
+        </p>
+        <p>
+          grayscale :
+          <br />
+          <input type="range" id="grayscale" value="0" class="filter" />
+        </p>
+        <p>
+          hue-rotate :
+          <br />
+          <input type="range" id="hue-rotate" value="0" class="filter" />
+        </p>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 0, 139);
+}
+#preview {
+  height: 295px;
+}
+input.filter {
+  width: 400px;
+}
+.container {
+  width: 550px;
+  height: 750px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 40px;
+}
+header {
+  width: 90%;
+  height: 300px;
+  margin: 25px auto;
+  border: 4px dashed black;
+  position: relative;
+}
+header > h2 {
+  text-align: center;
+  line-height: 280px;
+  color: rgba(0, 0, 0, 0.296);
+}
+#upload {
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.maincontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.download {
+  text-align: center;
+}
+#download {
+  width: 120px;
+  height: 50px;
+  background-color: rgb(58, 0, 139);
+  border: none;
+  color: rgba(255, 255, 255, 0.834);
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
+}
+#preview {
+  border: 1px solid gray;
+}
+main {
+  margin-top: 30px;
+}
+main p {
+  margin-top: 15px;
+  text-align: center;
+}
