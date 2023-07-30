@@ -30,6 +30,7 @@ header {
   border: 4px dashed black;
   position: relative;
 }
+
 header > h2 {
   text-align: center;
   line-height: 280px;
