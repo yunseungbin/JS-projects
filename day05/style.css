@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-image: url("겨울.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+h1 {
+  font-size: 7.5rem;
+  color: rgb(190, 190, 190);
+  text-align: center;
+  margin-top: 500px;
+}
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.snowflake {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
